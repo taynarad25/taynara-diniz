@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family= Montserrat & display=swap');
+
+:root {
+    --cor-preto-rico: #161F27;
+    --cor-corante-indigo: #205070;
+    --cor-azul-aco: #2980B9;
+    --cor-azul-carolina: #8BB8D5;
+    --cor-anti-flash-branco: #ECF0F1;
+}
+* {
+    padding: 0rem;
+    margin: 0rem;
+}
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y proximity;
+}
+body {
+    background-color: var(--cor-anti-flash-branco);
+    font-family: 'Montserrat', sans-serif;
+}
+h1{
+    text-align: center;
+    font-size: 2.7rem;
+    font-weight: normal;
+    margin: 0rem 0rem 1.7rem 0rem;
+}
+h2{
+    font-size: 2.1rem;
+    font-weight: normal;
+}
+p{
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+a{
+    font-size: 1.2rem;
+    font-weight: normal;
+    text-decoration: none;
+}
+header{
+    background: var(--cor-corante-indigo);
+    display: block;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0em 0rem 3rem 0rem var(--cor-azul-carolina);
+}
+nav {
+    padding: 0em 9.5rem;
+    display: flex;
+    align-items: center;
+}
+.canto{
+    margin-right: 23rem;
+}
+#logo {
+    justify-content: start;
+    max-width: 4.1rem;
+    border-radius: 100%;
+}
+#logo:hover {
+    box-shadow: 0em 0rem 0.2rem 0rem var(--cor-anti-flash-branco);
+}
+.sessao{
+    margin: 0rem 1.2rem;
+    padding: 1.8rem 1.2rem;
+    color: var(--cor-anti-flash-branco);
+    border-bottom: 0.4rem solid var(--cor-azul-aco);
+}
+.sessao:hover{
+    background-color: var(--cor-azul-aco);
+}
+hr{
+    margin-bottom: 3.1rem;
+}
+#sobre {
+    background-image: url(image/background-sobre.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: var(--cor-corante-indigo);
+    padding: 2.8rem 3.6rem;
+    color: var(--cor-preto-rico);
+    display: flex;
+}
+#sobre .fundo {
+    margin: 8rem 14.3rem ;
+    padding: 3.4rem 3.8rem ;
+    background-color: var(--cor-anti-flash-branco); 
+    border-radius: 0rem 1.2rem 0rem 1.2rem;
+}
+.info-sobre {
+    display: flex;
+    align-items: center;
+} 
+.foto {
+    border-radius: 2.5rem;
+    max-height: 18.6rem;
+    flex-shrink: 0;
+    margin: 0rem 1.6rem 0rem 0rem;
+}
+#sobre p{
+    text-align: center;
+    margin: 0rem 0rem 0rem 1.6rem;
+}
+.icon{
+    max-width: 50px;
+    padding-right: 1.2rem;
+}
+#conhecimentos {
+    background-image: url(image/background-conhecimentos.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: var(--cor-azul-carolina);
+    padding: 2.8rem 3.6rem;
+    color: var(--cor-anti-flash-branco);
+    display: flex;
+}
+#conhecimentos .fundo {
+    margin: 8rem 14.3rem ;
+    padding: 3.4rem 3.8rem ;
+    background-color: var(--cor-corante-indigo); 
+    border-radius: 0rem 1.2rem 0rem 1.2rem;
+}
+.info-conhecimentos {
+    display: inline-flex;
+}
+#conhecimentos a{    
+    display: flex;
+    width: 20rem;
+    align-items: center;
+    color: var(--cor-anti-flash-branco);
+}
+#conhecimentos a:hover{
+    text-decoration: underline;
+}
+#projetos {
+    background-image: url(image/background-projetos.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: var(--cor-anti-flash-branco);
+    padding: 2.8rem 3.6rem;
+    color: var(--cor-anti-flash-branco);
+    display: flex;
+}
+#projetos .fundo {
+    margin: 8rem 14.3rem ;
+    padding: 3.4rem 3.8rem ;
+    background-color: var(--cor-azul-aco); 
+    border-radius: 0rem 1.2rem 0rem 1.2rem;
+}
+#projetos h2{
+    margin-bottom: 1.7rem;
+}
+.espaco-botao{
+    justify-content: center;
+    display: flex;
+    gap: 6rem;
+}
+.botao{
+    color: var(--cor-anti-flash-branco);
+    padding: 0.6rem 1.1rem;
+    background-color: var(--cor-corante-indigo);
+    margin: 3rem 0rem;
+    border-radius: 0.6rem;
+    box-shadow: 0rem 0rem 0.6rem 0rem var(--cor-preto-rico);
+}
+.botao:hover{
+    color: var(--cor-preto-rico);
+    background-color: var(--cor-azul-carolina);
+        
+}
+#contato {
+    background-image: url(image/background-contato.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-color: var(--cor-preto-rico);
+    padding: 1rem 1rem;
+    color: var(--cor-anti-flash-branco);
+    display: flex;
+    justify-content: center;
+}
+#contato .fundo {
+    margin: 0.8rem 0rem 9rem 0rem;
+    padding: 3.4rem 3.8rem ;
+    width: 60%;
+
+}
+.info-contato {
+    display: inline-flex;
+}
+#contato a{    
+    display: flex;
+    width: 25rem;
+    align-items: center;
+    color: var(--cor-anti-flash-branco);
+}
+footer{
+    background-color: var(--cor-anti-flash-branco);
+    text-align: center;
+}
+footer a{
+    color: var(--cor-preto-rico);
+    font-size: 0.7rem;
+
+}
+body::-webkit-scrollbar {
+    width: 0.6rem;
+}
+  
+body::-webkit-scrollbar-track {
+    background: var(--cor-anti-flash-branco);
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: var(--cor-azul-carolina);    /* color of the scroll thumb */
+    border-radius: 2rem;
+}

@@ -290,16 +290,18 @@ body::-webkit-scrollbar-thumb {
 }
 @media screen and (max-width:760px){
     nav{
-        padding: 0vw 1vw;
+        padding: 0vw 4vw;
     }
     .canto{
-        margin-right: 0vw;
+        margin-right: 5vw;
     }
     #logo{
-        max-width: 15vw;
+        max-width: 10vw;
     }
     .sessao{
         padding: 7vw 3.5vw;
+        margin: 0;
+        border-bottom: transparent;
     }
     hr{
         margin-bottom: 5vw;

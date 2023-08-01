@@ -77,18 +77,20 @@ hr{
 #sobre {
     background-image: url(image/background-sobre.svg);
     background-repeat: no-repeat;
-    background-position: top;
+    background-position-y: 5vw;
     background-size: 100vw;
     background-color: var(--cor-corante-indigo);
     padding: 2.8vw 3.6vw;
     color: var(--cor-preto-rico);
     display: flex;
 }
-#sobre .fundo {
-    margin: 8vw 14.3vw ;
+.fundo{
+    margin: 8vw 20vw;
     padding: 3.4vw 3.8vw ;
+    border-radius: 0vw 1.2vw;
+}
+#sobre .fundo {
     background-color: var(--cor-anti-flash-branco); 
-    border-radius: 0vw 1.2vw 0vw 1.2vw;
 }
 .info-sobre {
     display: flex;
@@ -112,18 +114,14 @@ hr{
     background-image: url(image/background-conhecimentos.svg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100vw;
+    background-size: 100vw 100vw;
     background-color: var(--cor-azul-carolina);
     padding: 2.8vw 3.6vw;
     color: var(--cor-anti-flash-branco);
     display: flex;
 }
 #conhecimentos .fundo {
-    margin: 8vw 20vw;
-    padding: 3.4vw 3.8vw ;
     background-color: var(--cor-corante-indigo); 
-    border-radius: 0vw 1.2vw 0vw 1.2vw;
-    
 }
 .info-conhecimentos {
     display: flex;
@@ -142,17 +140,14 @@ hr{
 #projetos {
     background-image: url(image/background-projetos.svg);
     background-repeat: no-repeat;
-    background-size: 100vw;
+    background-size: 100vw 100vw;
     background-color: var(--cor-anti-flash-branco);
     padding: 2.8vw 3.6vw;
     color: var(--cor-anti-flash-branco);
     display: flex;
 }
 #projetos .fundo {
-    margin: 8vw 14.3vw ;
-    padding: 3.4vw 3.8vw;
     background-color: var(--cor-azul-aco); 
-    border-radius: 0vw 1.2vw 0vw 1.2vw;
 }
 #projetos h2{
     margin-bottom: 1.7vw;
@@ -187,7 +182,8 @@ hr{
     padding: 0vw 0vw 12vw 0vw;
 }
 #contato .fundo {
-    padding: 3.4vw 3.8vw;
+    margin: 0vw;
+    border-radius: 0vw;
 }
 .info-contato {
     display: flex;
@@ -220,4 +216,75 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
     background-color: var(--cor-azul-carolina);    /* color of the scroll thumb */
     border-radius: 2vw;
+}
+
+@media screen and (max-width:1050px){
+    h1{
+        font-size: 3.5vw;
+        margin: 0vw 0vw 2.5vw 0vw;
+    }
+    h2{
+        font-size: 3vw;
+    }
+    p{
+        font-size: 2.5vw;
+    }
+    a{
+        font-size: 2.5vw;
+    }
+    nav{
+        padding: 0vw 5vw;
+    }
+    .canto{
+        margin-right: 3vw;
+    }
+    #logo{
+        max-width: 8vw;
+    }
+    .sessao{
+        padding: 4.2vw 3vw;
+    }
+    hr{
+        margin-bottom: 4vw;
+    }
+    .fundo {
+        padding: 4.4vw 5.3vw;
+        border-radius: 0vw 2vw;
+        margin: 10vw;
+    }
+    #sobre{
+        background-position-y: 11.5vw;
+        padding: 5vw 3.8vw;
+    }
+    #sobre .fundo {
+        margin: 17vw 10vw 10vw 10vw;
+    }
+    .foto{
+        max-height: 30vw;
+        margin: 0vw 1.3vw 0vw 0vw;
+    }
+    .icon{
+        max-width: 5vw;
+        padding: 2vw;
+    }
+    #conhecimentos a{
+        width: 30vw;
+    }
+    #projetos h2{
+        margin-bottom: 2vw;
+    }
+    .espaco-botao{
+        gap: 12vw
+    }
+    .botao{
+        padding: 1.3vw 2.5vw;
+        margin: 4vw 0vw;
+        border-radius: 1.5vw;
+    }
+    #contato a{
+        width: 35vw;
+    }
+    footer a{
+        font-size: 1.7vw;
+    }
 }

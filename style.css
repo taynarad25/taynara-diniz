@@ -221,7 +221,7 @@ body::-webkit-scrollbar-thumb {
 @media screen and (max-width:1050px){
     h1{
         font-size: 3.5vw;
-        margin: 0vw 0vw 2.5vw 0vw;
+        margin: 0vw 0vw 4vw 0vw;
     }
     h2{
         font-size: 3vw;
@@ -286,5 +286,29 @@ body::-webkit-scrollbar-thumb {
     }
     footer a{
         font-size: 1.7vw;
+    }
+}
+@media screen and (max-width:760px){
+    nav{
+        padding: 0vw 1vw;
+    }
+    .canto{
+        margin-right: 0vw;
+    }
+    #logo{
+        max-width: 15vw;
+    }
+    .sessao{
+        padding: 7vw 3.5vw;
+    }
+    hr{
+        margin-bottom: 5vw;
+    }
+    #sobre{
+        background-position-y: 16vw;
+        padding: 7vw 3.8vw;
+    }
+    #sobre .fundo {
+        margin: 23vw 10vw 10vw 10vw;
     }
 }
